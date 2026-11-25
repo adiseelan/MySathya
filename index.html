@@ -283,7 +283,13 @@
   /* ---------- HEART PHOTO (optional) — letter mudinjadhum varum ----------
      1) heart outline rendu pakkamum draw aagum  2) photo zoom-oda ulla varum
      3) hearts burst  4) heartbeat + mini hearts mela parakkum  5) thottaa innum hearts */
-  .heart-photo { margin:28px auto 6px; width:min(300px, 76%); text-align:center; }
+  .heart-photo { margin:28px auto 6px; width:min(340px, 76%); text-align:center; }
+ .heart-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
   .heart-wrap { position:relative; cursor:pointer; will-change:transform; filter:drop-shadow(0 10px 18px rgba(255,94,158,.32)); }
   .heart-wrap.beat { animation: heartbeat 1.6s ease-in-out infinite; }
   .heart-inner { position:relative; width:100%; height:0; padding-top:92%; }   /* 200 x 184 heart */
